@@ -177,6 +177,10 @@ We are also fortunate to have an amazing [community of developers](https://githu
 
 Monica makes use of numerous open-source projects and we are deeply grateful. We hope that by offering Monica as a free, open-source project, we can help others in the same way these programs have helped us.
 
+## Monica CRM customization
+
+This repository includes a `codex-root` folder with resources for turning Monica into a lightweight CRM. See [codex-root/docs/MONICA-CRM.md](codex-root/docs/MONICA-CRM.md) for setup instructions. You can automate the process with `codex-root/scripts/setup_crm.sh`.
+
 ## License
 
 Copyright © 2016–2023
