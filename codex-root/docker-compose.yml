@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  monica:
+    build: ./monica-crm
+    ports:
+      - "8082:80"
+    env_file:
+      - .env
+    volumes:
+      - ./monica_data:/var/www/html/storage
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:10.11
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: monica
+      MYSQL_USER: monica
+      MYSQL_PASSWORD: monicapass
+    volumes:
+      - ./db_data:/var/lib/mysql
