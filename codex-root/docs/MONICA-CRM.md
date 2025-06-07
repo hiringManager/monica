@@ -26,6 +26,12 @@ Run:
 docker compose exec monica php artisan migrate
 ```
 
+Alternatively you can automate steps 2 and 3 by running:
+
+```bash
+scripts/setup_crm.sh
+```
+
 ### 4️⃣ Run Monica CRM
 
 ```bash
